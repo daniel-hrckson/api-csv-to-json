@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSV to JSON</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    </head>
+    <body>
+        <div id="main-container">
+            <style>@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');</style> 
+            <h3>Select your csv file (max 32Mb)</h3>
+                <form method="POST" enctype="multipart/form-data">
+                    <label for='input-file'>Upload File</label>
+                    <input id='input-file' type="file" name="csv_file"></input>
+                    <button type="submit">Get Json</button>
+                </form>
+        </div>
+    </body>
+</html>
