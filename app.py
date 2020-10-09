@@ -5,7 +5,7 @@ import pandas as pd
 
 
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = b'_5#H2G"F4Q8z\n\xec]/'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -23,3 +23,6 @@ def index():
 
     else:
         return abort(400) 
+
+if __name__ == "__main__":
+    app.run(threaded=True, port=5000)
